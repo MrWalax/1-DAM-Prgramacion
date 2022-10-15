@@ -1,0 +1,24 @@
+/*
+4.- Diseña un programa Java denominado PROG02_Ejerc4 que dada la edad de una
+persona, muestre un mensaje indicando si es mayor de edad. NO se puede utilizar el
+operador condicional if
+ */
+package prog02_ejerc4;
+
+/**
+ *
+ * @author ismael
+ */
+public class PROG02_Ejerc4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int edad = 5;
+        String estado = edad >= 18 ? "Mayor" : "Menor";
+        System.out.println("Es: " + estado);
+    }
+    
+}
