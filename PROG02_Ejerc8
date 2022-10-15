@@ -1,0 +1,50 @@
+/*
+8.- Diseña un programa Java denominado PROG02_Ejerc8 que dados el número de
+alumnos matriculados en Programación, número de alumnos matriculados en Entornos
+de Desarrollo y número de alumnos matriculados en Base de datos. El programa
+deberá mostrar el % de alumnos matriculado en cada uno de los tres módulos. Se
+supone que un alumno sólo puede estar matrículado en un módulo. Trata de mostrar un
+solo decimal en los porcentajes.
+ */
+package prog02_ejerc8;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ismael
+ */
+public class PROG02_Ejerc8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Alumnos en Programacion: ");
+        int programacion = sn.nextInt();
+        
+        System.out.println("Alumnos en Entornos de desarrollo: ");
+        int entornos = sn.nextInt();
+        
+        System.out.println("Alumnos en Bases de datos: ");
+        int BaseDatos = sn.nextInt();
+        
+        int total = programacion + entornos + BaseDatos;
+        
+        double PorcProg = (double) (programacion * 100) / total;
+        double PorcEnto = (double) (entornos * 100) / total;
+        double PorcBbdd = (double) (BaseDatos * 100) / total;
+        
+        System.out.printf("programacion: %.1f \n",PorcProg);
+        
+        System.out.printf("entornos: %.1f \n",PorcEnto);
+        
+        System.out.printf("BaseDatos: %.1f \n",PorcBbdd);
+        
+        
+        
+    }
+    
+}
