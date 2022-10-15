@@ -1,0 +1,8 @@
+2.- Indica si los siguientes identificadores de variables en Java serían válidos. Justifica tu respuesta.
+a. double. -> No es válida, esta es una de las 63 palabras reservadas de JAVA
+b. /horaactual. -> No es válida, no puede contener el carácter /
+c. $hora. -> Si es válida
+d. MiHora. -> si es válida
+e. _hora. -> si es válida
+f. 5hora. -> No es válido. Un identificador no puede comenzar por un dígito.
+g. char -> No es válida, esta es una de las 63 palabras reservadas de JAVA
