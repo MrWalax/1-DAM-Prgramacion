@@ -1,0 +1,40 @@
+/*
+ 3.- Teniendo en cuenta que var1, var2 y var3 son variables de tipo boolean y están
+inicializadas a los siguientes valores: var1=true, var2=true y var3=false y que las
+variables X, Y y Z son variables enteras con valores: X=5, Y=-8 y Z=10, indica si las
+siguientes operaciones se evaluan a true o false.:
+a. var1 || var2 && var3.
+b. (var1 || var3) && (var2 && !var1).
+c. (var2 || !var1 || !var3) && var1
+d. (X > 3 || Y > 3) && Z < -3.
+e. (X+Z == 15) && (Y != 2).
+ */
+package pruebas;
+
+/**
+ *
+ * @author ismael
+ */
+public class Pruebas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("variables a : " + (true || true && false));
+        System.out.println("variables b : " + ((true || false) && (true && !false)));
+        System.out.println("variables c : " + ((true || !true || !false) && (true)));
+        System.out.println("variables d : " + ((5>3 ||-8>3) && (10<-3)));
+        System.out.println("variables e : " + ((5+10==15)&&(10!=2)));
+    }
+    
+}
+
+RESULTADOS
+
+variables a : true
+variables b : true
+variables c : true
+variables d : false
+variables e : true
