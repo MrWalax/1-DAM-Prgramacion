@@ -1,0 +1,54 @@
+package prog02_ejerc1;
+/**
+ *
+1.- Crea un proyecto en Netbeans denominado PROG02_Ejerc1 con una clase clase
+y método main y declara e inicializa una variable para almacenar cada uno de los
+siguientes valores. Trata de utilizar el tipo de datos de mas se ajuste a los datos.
+Justifica tu elección.
+a. Valor máximo no modificable: 5000.
+b. Si el nuevo empleado tiene carnet de conducir o no.
+c. Un mes del año en formato numérido y como cadena.
+d. El nombre y apellidos de una persona.
+e. Sexo: con dos valores posibles 'V' o 'M'.
+f. Milisegundos transcurridos desde el 01/01/1970 hasta nuestros días.
+g. Saldo de una cuenta bancaria.
+h. Distancia en kms desde la Tierra a Júpiter
+* 
+* 
+ * @author ismael moreno lozano
+ */
+public class PROG02_Ejerc1 {
+      
+      public enum sexo {V,M}
+      public static void main(String args[]) {
+         
+        //a Valor maximo no modificable 5000
+        int MAXIMO = 5000; 
+        //b Tiene carnet de conducir.
+        boolean carnet = true;
+        //c mes del año en formato numero.
+        byte meses;
+        meses=10;
+        //d Nombre y apellido
+        String NombreYApellido = "Ismael Moreno";
+        //e Sexo con 2 valores V o M
+        sexo genero = sexo.M;
+        //f Milisegundos desde el 01/01/1970 hasta hoy.
+        long miliseg = 1639872000000L;
+        //g saldo en cuenta bancaria
+        float SaldoBanco = 12354.458F;
+        //h distancia en kms desde la tierra a jupiter.
+        long KmTierraJupiter = 587000000L;
+        
+        //impresion en pantalla sin println
+            System.out.print("\n\tA El valor maximo es " + MAXIMO);
+            System.out.print("\n\tB tiene carnet de conducir " + carnet);
+            System.out.print("\n\tC El mes del año es " + meses);
+            System.out.print("\n\tD Nombre y apellido " + NombreYApellido);
+            System.out.print("\n\tE El genero es " + genero);
+            System.out.print("\n\tF Milisegundos desde 1/1/1970 " + miliseg);
+            System.out.print("\n\tG El saldo en el banco es " + SaldoBanco);
+            System.out.print("\n\tH La distancia entre la tierra y jupiter en Km " + KmTierraJupiter);
+        }
+     } 
+    
