@@ -27,7 +27,7 @@ public class PROG02_Ejerc7 {
         System.out.print( "Introduce otro número: " );
         C2 = teclado.nextInt();
         System.out.println("el resultado de la dividion es: "+(C2/C1));
-        System.out.printf("La ecuación %.1fx + %.1f = 0 es: %f",C1,C2,(-(C2/C1)));
+        System.out.printf("La ecuación %.1fx + %.1f = 0 es: %.4f",C1,C2,(-(C2/C1)));
     }
     
 }
