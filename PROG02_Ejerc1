@@ -27,8 +27,7 @@ public class PROG02_Ejerc1 {
         //b Tiene carnet de conducir.
         boolean carnet = true;
         //c mes del año en formato numero.
-        byte meses;
-        meses=10;
+        byte meses[] = {1,2,3,4,5,6,7,8,9,10,11,12};
         //d Nombre y apellido
         String NombreYApellido = "Ismael Moreno";
         //e Sexo con 2 valores V o M
@@ -43,7 +42,7 @@ public class PROG02_Ejerc1 {
         //impresion en pantalla sin println
             System.out.print("\n\tA El valor maximo es " + MAXIMO);
             System.out.print("\n\tB tiene carnet de conducir " + carnet);
-            System.out.print("\n\tC El mes del año es " + meses);
+            System.out.print("\n\tC El mes del año es " + meses[0]);
             System.out.print("\n\tD Nombre y apellido " + NombreYApellido);
             System.out.print("\n\tE El genero es " + genero);
             System.out.print("\n\tF Milisegundos desde 1/1/1970 " + miliseg);
