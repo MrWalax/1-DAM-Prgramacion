@@ -1,4 +1,8 @@
 package prog02_ejerc1;
+
+import java.time.LocalDate;
+import java.time.Month;
+
 /**
  *
 1.- Crea un proyecto en Netbeans denominado PROG02_Ejerc1 con una clase clase
@@ -27,7 +31,38 @@ public class PROG02_Ejerc1 {
         //b Tiene carnet de conducir.
         boolean carnet = true;
         //c mes del año en formato numero.
-        byte meses[] = {1,2,3,4,5,6,7,8,9,10,11,12};
+        //byte meses[] = {1,2,3,4,5,6,7,8,9,10,11,12};
+        //Month mes = LocalDate.now().getMonth();
+        int NumMes = 8;    
+        String Mestexto;
+        switch (NumMes) {
+            case 1:  Mestexto = "Enero";
+                     break;
+            case 2:  Mestexto  = "Febrero";
+                     break;
+            case 3:  Mestexto = "Marzo";
+                     break;
+            case 4:  Mestexto = "Abril";
+                     break;
+            case 5:  Mestexto = "Mayo";
+                     break;
+            case 6:  Mestexto = "Junio";
+                     break;
+            case 7:  Mestexto = "Julio";
+                     break;
+            case 8:  Mestexto = "Agosto";
+                     break;
+            case 9:  Mestexto = "Septiembre";
+                     break;
+            case 10: Mestexto = "Octubre";
+                     break;
+            case 11: Mestexto = "Noviembre";
+                     break;
+            case 12: Mestexto = "Diciembre";
+                     break;
+            default: Mestexto = "Invalid month";
+                     break;
+            }
         //d Nombre y apellido
         String NombreYApellido = "Ismael Moreno";
         //e Sexo con 2 valores V o M
@@ -42,7 +77,8 @@ public class PROG02_Ejerc1 {
         //impresion en pantalla sin println
             System.out.print("\n\tA El valor maximo es " + MAXIMO);
             System.out.print("\n\tB tiene carnet de conducir " + carnet);
-            System.out.print("\n\tC El mes del año es " + meses[0]);
+            System.out.print("\n\tC Mes del año formato numero: " + NumMes);
+            System.out.print("\n\tC Mes del año formato cadena: " + Mestexto);
             System.out.print("\n\tD Nombre y apellido " + NombreYApellido);
             System.out.print("\n\tE El genero es " + genero);
             System.out.print("\n\tF Milisegundos desde 1/1/1970 " + miliseg);
@@ -50,4 +86,3 @@ public class PROG02_Ejerc1 {
             System.out.print("\n\tH La distancia entre la tierra y jupiter en Km " + KmTierraJupiter);
         }
      } 
-    
