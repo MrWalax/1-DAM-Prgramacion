@@ -34,7 +34,7 @@ public class Pruebas {
 RESULTADOS
 
 variables a : true
-variables b : true
+variables b : false
 variables c : true
 variables d : false
 variables e : true
