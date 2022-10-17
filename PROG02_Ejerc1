@@ -1,6 +1,5 @@
 package prog02_ejerc1;
 
-import java.time.LocalDate;
 import java.time.Month;
 
 /**
@@ -27,14 +26,12 @@ public class PROG02_Ejerc1 {
       public static void main(String args[]) {
          
         //a Valor maximo no modificable 5000
-        int MAXIMO = 5000; 
+        int MAXIMO = 5000; //uso este valor para declarar el entero 5000
         //b Tiene carnet de conducir.
-        boolean carnet = true;
+        boolean carnet = true; //uso boolean para declarar true o false
         //c mes del año en formato numero.
-        //byte meses[] = {1,2,3,4,5,6,7,8,9,10,11,12};
-        //Month mes = LocalDate.now().getMonth();
-        int NumMes = 8;    
-        String Mestexto;
+        int NumMes = 8;    // uso entero para poner el numero del mes
+        String Mestexto;    // Con switch convertimos el numero en texto para mostrar el nombre del mes
         switch (NumMes) {
             case 1:  Mestexto = "Enero";
                      break;
@@ -64,15 +61,15 @@ public class PROG02_Ejerc1 {
                      break;
             }
         //d Nombre y apellido
-        String NombreYApellido = "Ismael Moreno";
+        String NombreYApellido = "Ismael Moreno"; //uso string para poner una cadena de texto
         //e Sexo con 2 valores V o M
-        sexo genero = sexo.M;
+        sexo genero = sexo.M;   //Declaracion de la variable genero.
         //f Milisegundos desde el 01/01/1970 hasta hoy.
-        long miliseg = 1639872000000L;
+        long miliseg = 1639872000000L;  // variable de numero largo
         //g saldo en cuenta bancaria
-        float SaldoBanco = 12354.458F;
+        float SaldoBanco = 12354.458F; // variable de coma flotante para almacenar decimales.
         //h distancia en kms desde la tierra a jupiter.
-        long KmTierraJupiter = 587000000L;
+        long KmTierraJupiter = 587000000L; // variable de numero largo
         
         //impresion en pantalla sin println
             System.out.print("\n\tA El valor maximo es " + MAXIMO);
