@@ -14,7 +14,7 @@ public class PROG02_Ejerc5 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int segundos = 853210;
+        int segundos = 853277;
         
         int dias = segundos / 86400;
         int seg_restantes = segundos % 86400;
@@ -22,10 +22,14 @@ public class PROG02_Ejerc5 {
         int horas = seg_restantes / 3600;
         seg_restantes = seg_restantes % 3600;
         
-        int minutos = seg_restantes % 60;
+        int minutos = seg_restantes / 60;
+        
+        seg_restantes = seg_restantes % 60;
+        int segundos2 = seg_restantes;
         
         System.out.println("Dias: " + dias);
         System.out.println("Horas: " + horas);
-        System.out.println("Segundos: " + minutos);
+        System.out.println("Minutos: " + minutos);
+        System.out.println("Segundos: " + segundos2);
     }    
 }
